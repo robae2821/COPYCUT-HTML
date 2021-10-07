@@ -1,0 +1,126 @@
+body{
+    margin: 0;
+    padding: 0;
+    width: 100vw;
+    height: 100vh;
+}
+
+.flexbox-container{
+    display: flex;
+    flex-wrap:nowrap;
+    flex-direction: row;
+}
+
+.flexbox-item{
+    padding-left: 1em;
+    padding-right: 1em;
+    padding-bottom: 1.7em;
+    background-color: rgb(59, 58, 58);
+
+}
+.flex-four{
+    flex-grow:2;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.flex-three{
+    flex-grow: 0;
+}
+
+/*coin animation start*/
+@keyframes spinning{
+    from{transform: rotate(0deg);}
+    to{transform: rotate(360deg);}
+}
+
+.spin-coin{
+    animation-name: spinning;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+/*coin animation end*/
+
+.flex-two{
+    flex-grow: 0;
+}
+
+.flex-one{
+    flex-grow: 0;
+}
+
+img{
+    height: 95px;
+    width: 95px;
+}
+
+/*big purple box start*/
+.flex-five{
+    background-color: rgb(153, 33,133);
+    background-size: contain;
+    background-repeat:no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    height: 780px;
+    width: 400px;
+    padding-top: 2.5em;
+
+}
+/*big purple box END*/
+
+/*small spinning coin animation START here*/
+@keyframes spinning{
+    from {transform: rotate(0deg);}
+    to {transform: rotate(360deg);}
+}
+
+.small-spin-coin-one, .small-spin-coin-two, .small-spin-coin-three{
+    animation-name: spinning;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+/*small spinning coin animation END here*/
+
+/*small spinning coin css start here*/
+.small-spin-coin-one{
+    height:40px;
+    width:40px;
+    position: absolute;
+    top: 169px;
+    left: 200px;
+}
+
+.small-spin-coin-two{
+    height:40px;
+    width:40px;
+    position: absolute;
+    top: 169px;
+    left: 200px;
+}
+
+.small-spin-coin-three{
+    height:41px;
+    width:41px;
+    position: absolute;
+    top: 169px;
+    left: 200px;
+}
+/*small spinning coin css END here*/
+
+.flex-five #big-coin {
+    height: 300px;
+    width: 300px;
+}
+
+.footer{
+    background-color: gray;
+    position:fixed;
+    left:0;
+    bottom:0;
+    width: 100%;
+    color:black;
+    text-align: center;
+}
